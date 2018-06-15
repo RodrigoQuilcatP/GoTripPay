@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <title>Pago - GoTrip!</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  <script type="text/javascript">
+    function CompraRealizada(){
+      alert('Tu compra fue realizada correctamente, revisa tu correo electronico para ver el detalle de la compra');
+    }
+  </script>
+</head>
+
+<body>
+
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button">GoTrip!</a>
+  <a href="#" class="w3-bar-item w3-button">Inicio</a>
+  <a href="#" class="w3-bar-item w3-button">Paquetes</a>
+  <a href="#" class="w3-bar-item w3-button">Contactenos</a>
+</div>
+
+<div class="container">
+  <div class="col1">
+    <div class="card">
+      <div class="front">
+        <div class="type">
+          <img class="bankid"/>
+        </div>
+        <span class="chip"></span>
+        <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+        <div class="date"><span class="date_value">MM / YYYY</span></div>
+        <span class="fullname">FULL NAME</span>
+      </div>
+      <div class="back">
+        <div class="magnetic"></div>
+        <div class="bar"></div>
+        <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+        <span class="chip"></span><span class="disclaimer">This card is property of Random Bank of Random corporation. <br> If found please return to Random Bank of Random corporation - 21968 Paris, Verdi Street, 34 </span>
+      </div>
+    </div>
+  </div>
+  <div class="col2">
+    <label>Número de Tarjeta:</label>
+    <input class="number" type="text" ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+    <label>Nombre del titular:</label>
+    <input class="inputname" type="text" placeholder=""/>
+    <label>Fecha de Expiración:</label>
+    <input class="expire" type="text" placeholder="MM / YYYY"/>
+    <label>Código de Seguridad:</label>
+    <input class="ccv" type="text" placeholder="CVC" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+    <label>Correo Electronico: </label>
+    <input class="email" type="text" placeholder="E-Mail" />
+    <button class="buy" onclick="CompraRealizada();"><i class="material-icons">lock</i>Pagar($)</button>
+    
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
